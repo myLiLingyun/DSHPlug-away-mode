@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Away Mode",
+    "description": "Choose how the agent handles questions while you are away: off, decide independently, or pause the task. Questions are answered automatically; a plan submitted for review in plan mode is answered too and stays unapproved, and operations that need approval fail without one."
+  }
+}

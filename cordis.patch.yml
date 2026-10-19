@@ -1,0 +1,4 @@
+# dsh-away-mode 的 bundle 层：把 Host 与 Client 共用的插件行插入 profile。
+- insert:
+    - id: away-mode
+      name: "dsh-away-mode"

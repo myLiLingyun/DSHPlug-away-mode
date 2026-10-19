@@ -1,0 +1,41 @@
+{
+  "name": "dsh-away-mode",
+  "version": "1.2.0",
+  "private": true,
+  "description": "离开模式：用户不在时，让 agent 自行选择或暂停任务。",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "LICENSE-DOCS"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/myLiLingyun/DSHPlug-away-mode.git"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "GPL-3.0-only"
+}
